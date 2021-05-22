@@ -45,3 +45,19 @@ def start_chatbot(Bot):
         
         
         
+# create chatbot 
+bot = create_bot('ABC')
+
+# train all data
+train_all_data(bot)
+
+# train chatbot with your custom data
+house_owner = [
+    "Who is the owner of the house?",
+    "ABCD"
+]
+
+custom_train(bot, house_owner)
+
+# start chatbot
+start_chatbot(bot)
